@@ -1,0 +1,28 @@
+Berikut terlampir soal Technical Test
+
+1. m_dukcapil_data (m_dukcapil_data_id, NIK, name, maiden_name, birth_date, gender (M/F), religon_id, marital_status)
+
+2. t_dukcapil_check_result (t_dukcapil_check_result, NIK, check_dtm, check_status (found/not found))
+
+3. m_religion (religion_id, religion_name, usr_crt, dtm_crt, usr_upd, dtm_upd)
+data: Budha, Hindu, Islam, Kristen Protestan, Kristen Katholik, Kongfucu, Lainnya)
+
+4. m_marital_status (m_marital_status_id, marital_status_desc)
+data: Single, Widow, Widower, Merried
+
+Soal:
+1. Buatkan web page utk menambah, mengedit, menghapus data ke table m_dukcapil_data 
+(note: 
+- Agama, Status pernikahan berupa dropdownlist, Jenis kelamin berupa radio button
+- Proses CRUD dgn web method)
+
+2. Buatkan Restfull API untuk melakukan cek NIK ke m_dukcapil_data dengan metode http get (url:http://ip_address:port?nik=xxxxxxxxxxxxxxxx)
+dan result masukkan ke t_dukcapil_check_result
+
+3. Buatkan Restfull API untuk melakukan cek NIK ke m_dukcapil_data dengan metode http post (url:http://ip_address:port) dan result masukkan ke t_dukcapil_check_result
+header parameter: content_type = application/json 
+body paramater: nik=xxxxxxxxxxxxxxxx)
+
+4. Buatkan mobile app utk menampilkan, menambah, mengedit, menghapus data ke table m_dukcapil_data (note: 
+- Agama, Status pernikahan berupa dropdownlist, Jenis kelamin berupa radio button
+- Proses CRUD dgn web api method)

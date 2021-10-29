@@ -1,2 +1,2 @@
 # wmfnnc
-dukcapil servie
+dukcapil service
